@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css"/>
+    <link rel="stylesheet" href="../map.css"/>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+
+   
+    <title>DEMO DAY PROJECT</title>
+    <div class="hero">
+      <nav>
+          <a href="#" class="moving_navbar">
+              <div class="one"></div>
+              <div class="two"></div>
+              <div class="three"></div>
+            </a>
+              <div class="about-content">
+                  <a href="../index.html">Home</a>
+                  <a href="../crime_data.html">Crime Data</a>
+                  <a href="../map.html">Map</a>
+                  <a href="../CrimeMap/incs_map.html">Crime Map</a>
+                  <a href="../contact.html">Contact</a>
+              </div>
+          </div>
+        </nav>
+  </div>
+    <style>
+        /* Always set the map height and width explicitly to define the size of the div
+         * element that contains the map. */
+        #crimeometer-container {
+          height: 500px;
+          width: 900px; 
+          margin: 10px;
+          border: 2px solid; 
+          border-color: rgba(100,100,100,.7);
+          border-radius: 4px;
+        }
+        #crime-map {
+          height: 100%;
+          width: 100%; 
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="crimeometer-container">
+        <div id="crime-map"></div>
+      </div>
+      <script src="crimeometer-data-visualization-kit/config/config.js"></script>
+      <script src="crimeometer-data-visualization-kit/js/icons.js"></script>
+      <script id="crimeometer-mapbox-riskmap-v2" data-tk="YmYyN2Y3MDFlZGVlMzA1M2UzZjg0YzZkODA4OWNiYWQxNjlkYjc2OTljY2RkNmZmYWU1YjgyN2MxNDJkMjA2ODUzODRhYTkwYTg3NDM4Yjg4YjU1YjhkMWIwNzBkNGVlZDJkNzc1YmM1ZjdmZTUyMjRhY2E3ZDEzZDg3ZWE2OWE=" data-zoom="14" data-lat="37.753960" data-lon="-122.445154" data-distance="5.5mi" data-datetime-ini="2020-07-01 00:00:00" data-datetime-end="2020-08-24 00:00:00" data-max-incidents="500" src="crimeometer-data-visualization-kit/js/crimeometer-mapbox-riskmap-v2.1.js"></script>
+      <!--  ######################## END Crimeometer embebed map code ######################## -->
+    
+</body>
+</html>
