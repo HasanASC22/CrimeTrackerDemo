@@ -8,6 +8,7 @@ config/config.js
 
 # Ignore local environment variables (if you make one)
 .env
+.env.local
 
 # Other stuff not wanted (OS junk, Log files)
 .DS_Store
