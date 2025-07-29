@@ -1,3 +1,6 @@
+import { CRIMEOMETER_API_KEY, MAPBOX_ACCESS_TOKEN } from '../../../../../config/config.js';
+
+var x_api_key = CRIMEOMETER_API_KEY;
 
 var map;
 
@@ -17,7 +20,7 @@ function initMap() {
     const data_datetime_end = script_tag.getAttribute("data-datetime-end");
     const data_max_incidents = script_tag.getAttribute("data-max-incidents");
 
-    mapboxgl.accessToken = api_mapbox_accessToken;
+    mapboxgl.accessToken = MAPBOX_ACCESS_TOKEN;
 
     map = new mapboxgl.Map({
         container: 'crime-map',

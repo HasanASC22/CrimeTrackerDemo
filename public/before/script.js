@@ -1,5 +1,7 @@
+import { CRIMEOMETER_API_KEY, MAPBOX_ACCESS_TOKEN } from '../../config/config.js';
+
 var myHeaders = new Headers();
-myHeaders.append("x-api-key", "I6Qzjiuye94bd7pwQcglh8Vzd5box0Ot4jItgyvg");
+myHeaders.append("x-api-key", CRIMEOMETER_API_KEY);
 
 var formdata = new FormData();
 
@@ -15,7 +17,7 @@ fetch("https://api.crimeometer.com/v1/incidents/raw-data?lat=42.719296&lon=-84.4
   .catch(error => console.log('error', error));
 
 
-  const apiKey='pk.eyJ1Ijoibmlra29zIiwiYSI6ImNsNndhaHEyNjI5Mm8zZG9kMXZ5aWd3NXMifQ.AstvVePNcQo-mv7D9JDtJw';
+  const apiKey=MAPBOX_ACCESS_TOKEN;
 
 
 

@@ -1,0 +1,14 @@
+# .gitignore
+
+# Node
+node_modules/
+
+# Environment files. Ignore local config files with API keys
+config/config.js
+
+# Ignore local environment variables (if you make one)
+.env
+
+# Other stuff not wanted (OS junk, Log files)
+.DS_Store
+*.log
